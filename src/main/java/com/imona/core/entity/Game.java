@@ -27,7 +27,4 @@ public class Game extends BaseEntity {
 
     @OneToMany(mappedBy = "game", cascade = CascadeType.ALL)
     private List<Player> players;
-
-    @OneToMany(mappedBy = "game", cascade = CascadeType.ALL)
-    private List<Action> actions;
 }
